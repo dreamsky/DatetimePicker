@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script src="js/jquery.ui.timepicker.js"></script>
+
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/redmond/jquery-ui-1.8.16.custom.css" />
+
+<style>
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+#ui_tpicker_hour_time,#ui_tpicker_minute_time{
+	border:1px solid #C5DBEC;
+}
+
+/* ui datepicker style */
+.ui-datepicker {
+	border:1px solid #c5dbec;
+}
+
+.ui-datepicker td a {
+	text-align: center;
+}
+
+input {
+  width:150px;
+  border: 1px solid red;
+}
+</style>
+<title>DatetimPicker Demo</title>
+<script>
+	$(document).ready(function() {
+		$("#time").datetimepicker({
+			stepMinute: 5,
+			minDate: new Date()
+		});
+	});
+</script>
+</head>
+<body>
+<div style="margin:0 auto;width:960px;margin-top:100px;"
+<form id="demo-test" name="demo-test">
+	<input type="text" id="time" name="time" />
+</form>
+</div>
+</body>
+</html>
